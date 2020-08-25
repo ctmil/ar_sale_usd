@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<record model="ir.ui.view" id="ar_sale_product_template_form">
+		<field name="name">ar.sale.product.template.form</field>
+		<field name="inherit_id" ref="product.product_template_form_view"></field>
+		<field name="model">product.template</field>
+		<field name="arch" type="xml">
+			<field name="company_id" position="before">
+				<field name="sale_currency_id"></field>
+			</field>
+		</field>
+	</record>
+
+</odoo>
